@@ -10,7 +10,7 @@ app.use(express.json());
 const db = mysql.createConnection({
     host: "localhost",
     user: "root",        // change if needed
-    password: "@Gubb4788", // change if needed
+    password: "your_password", // change this
     database: "studentdb",
 });
 
@@ -107,3 +107,4 @@ app.put("/students/:id", (req, res) => {
 app.listen(5000, () => {
     console.log("✅ Server running on http://localhost:5000");
 });
+
